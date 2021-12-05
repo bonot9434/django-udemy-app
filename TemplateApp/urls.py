@@ -3,8 +3,8 @@ from django.urls.resolvers import URLPattern
 from . import views
 
 app_name = 'app'
-URLPatterns = [
+urlpatterns = [
   path('home', views.home, name='home'),
   path('members', views.members, name='members'),
-  path ('member/<int:id>', views.member, name='member')
+  path('member/<int:id>', views.member, name='member'),
 ]
